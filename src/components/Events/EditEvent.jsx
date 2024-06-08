@@ -30,7 +30,6 @@ const {mutate} = useMutation({
   },
   onSettled: () => {
     queryClient.invalidateQueries(['events', id]);
-  
   }
 })
 
